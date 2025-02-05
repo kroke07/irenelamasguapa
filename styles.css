@@ -27,7 +27,7 @@ h1 {
 .corner-image {
   position: absolute;
   width: 70vw; /* Ajusta el tamaño dinámicamente */
-  max-width: 400px; /* Evita que sea demasiado grande */
+  max-width: 500px; /* Evita que sea demasiado grande */
   height: auto;
   z-index: 10;
 }
