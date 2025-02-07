@@ -9,9 +9,10 @@ body {
   flex-direction: column;
   text-align: center;
   background-image: url(img/ven.jpg);
-  background-size: 600px; /* Se adapta a cualquier tamaño */
+  background-size: cover; /* Se adapta a toda la pantalla */
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantiene el fondo fijo */
 }
 
 .container {
@@ -84,13 +85,26 @@ h1 {
   }
 
   .corner-image {
-      width: 25vw;
-      max-width: 100px;
+      width: 35vw; /* Más grandes en móviles */
+      max-width: 170px; /* Se ven más sin ser demasiado grandes */
+      opacity: 0.9; /* Más visibles */
+      z-index: 100; /* Asegura que estén sobre el contenido */
+  }
+
+  .top-left {
+      top: 5px; /* Más arriba */
+      left: 5px;
+  }
+
+  .top-right {
+      top: 5px; /* Más arriba */
+      right: 5px;
   }
 
   .buttons {
       flex-direction: column;
       align-items: center;
+      margin-top: 15px; /* Menos espacio entre los botones */
   }
 
   .yes-button,
